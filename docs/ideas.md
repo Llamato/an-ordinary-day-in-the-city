@@ -9,7 +9,7 @@ Peacehammer Shop
 Baustelle 
 Baumarkt 
 
-## Core mechanics :
+## Core mechanics:
 Weg planen, begrenzte wegelemente 
 Sidescroll (Uhr/charakter) 
 Karte (Charakter)
