@@ -11,7 +11,7 @@
 
 ## Core mechanics:
 - [] Weg planen, begrenzte wegelemente 
-- [] Sidescroll (Uhr/charakter) 
+- [x] Sidescroll (Uhr/charakter) 
 - [] Karte (Charakter)
 - [] Events(Ort-zeit)
 - [] Randomised events (eventliste)
