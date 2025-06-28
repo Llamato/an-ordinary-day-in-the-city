@@ -1,7 +1,8 @@
-[gd_scene load_steps=17 format=3 uid="uid://cpdxvv6v82dfx"]
+[gd_scene load_steps=18 format=3 uid="uid://cpdxvv6v82dfx"]
 
-[ext_resource type="Script" uid="uid://hrsl8uevonh5" path="res://scenes/character_body_2d.gd" id="1_ojwee"]
+[ext_resource type="Script" path="res://scripts/Sasha.gd" id="1_ojwee"]
 [ext_resource type="Texture2D" uid="uid://b4k88116rg1f1" path="res://assets/tiles/tilemap_packed.png" id="2_vb15s"]
+[ext_resource type="Script" path="res://scripts/camera.gd" id="3_vb15s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rs6on"]
 size = Vector2(16, 16)
@@ -122,3 +123,7 @@ shape = SubResource("RectangleShape2D_rs6on")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
 sprite_frames = SubResource("SpriteFrames_yc13m")
 animation = &"D"
+frame_progress = 0.93156
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("3_vb15s")

@@ -1,10 +1,9 @@
 extends Node2D
 
 @export var endscreen : PackedScene
-
-func _ready() -> void:
-	print("Alive")
-	var endscreen_instance = endscreen.instantiate()
-	add_child(endscreen_instance)
 	
-	print("dead")
+func _on_game_time_timeout() -> void:
+	var endscreen_instance = endscreen.instantiate()
+	var tree = get_tree()
+	tree.add_child(endscreen_instance)
+	tree.paused = true
