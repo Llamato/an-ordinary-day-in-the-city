@@ -115,6 +115,8 @@ animations = [{
 }]
 
 [node name="Sasha" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
 script = ExtResource("1_ojwee")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -127,8 +129,5 @@ frame_progress = 0.93156
 
 [node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("3_vb15s")
-
-[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
-debug_enabled = true
 
 [connection signal="animation_looped" from="CollisionShape2D/AnimatedSprite2D" to="." method="_set_animation"]
