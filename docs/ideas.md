@@ -27,7 +27,7 @@
 - [] Kumpel futtert Snacks auf 
 - [] Bahn
 - [] Katzen bewegen sich
-
+- [] Credits
 
 ## Namen:
 A ordinary day in the City 
@@ -35,3 +35,5 @@ In case of Dragons - Break map
 
 ## Weitere Ideen: 
 - [] Artefakt um Tag umzuplanen (evtl geht es kaputt)
+- [] Anfangs und Endszene als Artwork
+
