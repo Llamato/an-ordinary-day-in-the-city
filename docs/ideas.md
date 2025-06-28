@@ -16,7 +16,7 @@
 - [] Events(Ort-zeit)
 - [] Randomised events (eventliste)
 - [] Music (lowfi fürs planen, Adventure mäßig für lauf)
-- [] Level zeit (3min)
+- [x] Level zeit (3min)
 - [] Umplanen (zeitlich getimed, geht von der Level zeit ab)
 
 ## Nice to have:
