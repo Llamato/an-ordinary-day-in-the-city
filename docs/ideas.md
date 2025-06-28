@@ -3,11 +3,10 @@
 ## Distractions: 
 - [] Katze!!! 
 - [] Hund
-- [] Bahn (zu spät)
 - [] Ampel 
-- []Peacehammer Shop 
-- [] Baustelle 
-- [] Baumarkt 
+- [] Waraxe Shop 
+- [] Baustelle
+- [] Brettspielladen
 
 ## Core mechanics:
 - [] Weg planen, begrenzte wegelemente 
@@ -25,6 +24,10 @@
 - [] Final Level mit plötzlichen Ortswechsel
 - [] Record scratch
 - [] Sound, wenn man in ein Event reinläuft
+- [] Kumpel futtert Snacks auf 
+- [] Bahn
+- [] Katzen bewegen sich
+
 
 ## Namen:
 A ordinary day in the City 
