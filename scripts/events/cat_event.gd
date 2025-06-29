@@ -10,6 +10,7 @@ func fireEvent(choice: bool):
 	
 func on_pet_button_pressed():
 	super._on_positive_button_pressed()
+	
 
 func on_walk_by_button_pressed():
 	super._on_negative_button_pressed()

@@ -14,8 +14,6 @@ enum State { IDLE, FOLLOW }
 var _state = State.IDLE
 var _velocity = Vector2()
 
-
-
 var _click_position = Vector2()
 var _path = PackedVector2Array()
 var _next_point = Vector2()
@@ -49,7 +47,7 @@ func _move_to(local_position):
 	_velocity = _snap_to_cardinal(_space_diff).normalized()
 	if (abs(_space_diff.length())<4):
 		_velocity = _space_diff.normalized()
-	_velocity *= 16. 
+	_velocity *= movement_speed 
 	current_speed = _velocity
 	move_and_collide(_velocity * get_process_delta_time())
 	_set_animation()
