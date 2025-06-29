@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+class_name PlayerChar
 enum State { IDLE, FOLLOW }
 
 @export var speed = 100
