@@ -13,7 +13,7 @@
 - [] Weg planen, begrenzte wegelemente 
 - [x] Sidescroll (Uhr/charakter) 
 - [] Karte (Charakter)
-- [] Events(Ort-zeit)
+- [x] Events(Ort-zeit)
 - [] Randomised events (eventliste)
 - [] Music (lowfi fürs planen, Adventure mäßig für lauf)
 - [x] Level zeit (3min)
