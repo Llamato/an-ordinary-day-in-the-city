@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c27a5us4pkch3" path="res://assets/aseprite/Character walk back.PNG" id="5_ewmb1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rs6on"]
-size = Vector2(10, 10.05)
+size = Vector2(10, 10)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q6hq0"]
 atlas = ExtResource("2_3xfqf")
@@ -154,6 +154,7 @@ shape = SubResource("RectangleShape2D_rs6on")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
 sprite_frames = SubResource("SpriteFrames_yc13m")
 animation = &"U"
+offset = Vector2(0, -8)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("3_vb15s")
