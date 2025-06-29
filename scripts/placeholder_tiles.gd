@@ -2,7 +2,7 @@ extends TileMapLayer
 
 const CELL_SIZE = Vector2i(16, 16)
 const BASE_LINE_WIDTH = 3.0
-const DRAW_COLOR = Color.WHITE * Color(1, 1, 1, 0.5)
+const DRAW_COLOR = Color.YELLOW * Color(1, 1, 1, 0.5)
 
 # The object for pathfinding on 2D grids.
 var _astar = AStarGrid2D.new()
@@ -26,22 +26,14 @@ func _ready():
 		for j in range(_astar.region.position.y, _astar.region.end.y):
 			var pos = Vector2i(i, j)
 			var data = get_cell_tile_data(pos)
-			if data 	 == null:
+			if data == null :
+				_astar.set_point_solid(pos)
 				break
 			if data.get_collision_polygons_count(0) != 0:
 				_astar.set_point_solid(pos)
 
 
-func _draw():
-	if _path.is_empty():
-		return
 
-	var last_point = _path[0]
-	for index in range(1, len(_path)):
-		var current_point = _path[index]
-		draw_line(last_point, current_point, DRAW_COLOR, BASE_LINE_WIDTH, true)
-		draw_circle(current_point, BASE_LINE_WIDTH * 2.0, DRAW_COLOR)
-		last_point = current_point
 
 
 func round_local_position(local_position):
