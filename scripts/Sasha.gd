@@ -14,6 +14,8 @@ enum State { IDLE, FOLLOW }
 var _state = State.IDLE
 var _velocity = Vector2()
 
+
+
 var _click_position = Vector2()
 var _path = PackedVector2Array()
 var _next_point = Vector2()
@@ -74,6 +76,7 @@ func _change_state(new_state):
 		set_movement_target()
 		_set_animation()
 	elif new_state == State.FOLLOW:
+		get_parent().queue_redraw()
 		_path = _tile_map.find_path(position, _click_position)
 		set_movement_target()
 		_set_animation()
@@ -83,7 +86,9 @@ func _change_state(new_state):
 		# The index 0 is the starting cell.
 		# We don't want the character to move back to it in this example.
 		_next_point = _path[1]
+	
 	_state = new_state
+
 
 func _snap_to_cardinal(the_speed: Vector2) -> Vector2:
 	var unit_direction = the_speed.normalized()
