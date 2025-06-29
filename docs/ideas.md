@@ -46,3 +46,5 @@ man geht in den waraxe shop, um farben für minis zu kaufen
 man geht zum brettspieleladen, um minis und würfel zu kaufen
 man geht an der uni vorbei, und wird von einem kommilitonen angesprochen und aufgehalten
 man kommt an einem see vorbei, und füttert die enten mit entenfutter
+man begegnet marvin der biene, und muss ausweichen 
+
