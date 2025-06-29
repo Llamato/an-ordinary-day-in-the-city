@@ -9,7 +9,7 @@ enum State { IDLE, FOLLOW }
 @export var movement_speed: float = 16.0
 @export var ARRIVE_DISTANCE = .4
 @export var current_speed: Vector2 = Vector2(0., 0.)
-@onready var _tile_map = get_node("/root/Node2D/TileMapLayer")
+@onready var _tile_map = $TileMapLayer
 
 var _state = State.IDLE
 var _velocity = Vector2()
@@ -55,7 +55,7 @@ func _move_to(local_position):
 
 func _unhandled_input(event):
 	_click_position = get_global_mouse_position()
-	if _tile_map.is_point_walkable(_click_position):
+	if _tile_map != null && _tile_map.is_point_walkable(_click_position):
 		if event.is_action_pressed(&"teleport_to", false, true):
 			_change_state(State.IDLE)
 			global_position = _tile_map.round_local_position(_click_position)

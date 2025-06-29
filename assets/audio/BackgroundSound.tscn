@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c3j4dwuf3nkfe"]
 
-[ext_resource type="AudioStream" uid="uid://dxcrr56336d4p" path="res://assets/audio/Background Music/ambient sounds.ogg" id="1_3idu0"]
+[ext_resource type="AudioStream" uid="uid://dfhljjjw16rd3" path="res://assets/audio/Background Music/ambient sounds.ogg" id="1_3idu0"]
 
 [node name="SoundPlayer" type="Node2D"]
 

@@ -1,14 +1,15 @@
-[gd_scene load_steps=15 format=3 uid="uid://drkdscqnllenm"]
+[gd_scene load_steps=16 format=3 uid="uid://drkdscqnllenm"]
 
 [ext_resource type="PackedScene" path="res://scenes/CityMap.tscn" id="1_vnygp"]
-[ext_resource type="Texture2D" uid="uid://ctor7ij3v3an6" path="res://assets/blank.png" id="2_t44rc"]
-[ext_resource type="Texture2D" uid="uid://4rkqdbnu28lo" path="res://assets/event.png" id="3_s8u78"]
+[ext_resource type="Texture2D" uid="uid://c57lpw3oo5w8y" path="res://assets/blank.png" id="2_t44rc"]
+[ext_resource type="Texture2D" uid="uid://c6v38e7yi80k2" path="res://assets/event.png" id="3_s8u78"]
 [ext_resource type="Script" uid="uid://bh7b6gmuamxup" path="res://scripts/EventTilemapLayer.gd" id="4_t44rc"]
-[ext_resource type="Texture2D" uid="uid://jd5flcqthl13" path="res://assets/aseprite/F0.png" id="4_xdupm"]
+[ext_resource type="Texture2D" uid="uid://bykstfpnh0fkm" path="res://assets/aseprite/F0.png" id="4_xdupm"]
 [ext_resource type="Script" uid="uid://c45efnpd2xq0m" path="res://scripts/debug_man.gd" id="5_07214"]
 [ext_resource type="PackedScene" uid="uid://gsmyt2mqaj57" path="res://scenes/events/debug_location_event.tscn" id="5_edrkd"]
-[ext_resource type="Texture2D" uid="uid://5i8508rquwhl" path="res://assets/Debugguy.png" id="6_edrkd"]
+[ext_resource type="Texture2D" uid="uid://b2leji35n7cvi" path="res://assets/Debugguy.png" id="6_edrkd"]
 [ext_resource type="PackedScene" uid="uid://dxchqkfak0uo" path="res://scenes/events/CatEncounter/cat_event.tscn" id="7_sk32c"]
+[ext_resource type="Texture2D" uid="uid://5n640lg2f443" path="res://assets/aseprite/f4.png" id="10_1uao8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gfkxp"]
 texture = ExtResource("2_t44rc")
@@ -46,6 +47,7 @@ Vector2i(8, 36): ExtResource("7_sk32c")
 }
 
 [node name="DebugMan" type="CharacterBody2D" parent="." index="1" groups=["ete"]]
+visible = false
 position = Vector2(98, 595)
 script = ExtResource("5_07214")
 
@@ -60,3 +62,9 @@ hframes = 6
 position = Vector2(0, -2)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." index="2"]
+
+[node name="Deco" type="Node2D" parent="." index="3"]
+
+[node name="F4" type="Sprite2D" parent="Deco" index="0"]
+position = Vector2(184, 611)
+texture = ExtResource("10_1uao8")
