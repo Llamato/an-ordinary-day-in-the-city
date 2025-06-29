@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c4kln8as44p1g"
+path="res://.godot/imported/barking dog.wav-9ca04e6aa9e9a555dbd71cf6f7189e96.sample"
+
+[deps]
+
+source_file="res://assets/audio/sounds/barking dog.wav"
+dest_files=["res://.godot/imported/barking dog.wav-9ca04e6aa9e9a555dbd71cf6f7189e96.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
