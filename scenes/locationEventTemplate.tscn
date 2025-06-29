@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://n5wmbqmmrp7"]
+
+[ext_resource type="PackedScene" uid="uid://bht85wpvc8uq8" path="res://scenes/eventTemplate.tscn" id="1_wpf73"]
+[ext_resource type="Script" uid="uid://c3oqvc2jyvbv7" path="res://scripts/LocationEvent.gd" id="2_po70q"]
+
+[node name="LocationEvent" instance=ExtResource("1_wpf73")]
+script = ExtResource("2_po70q")

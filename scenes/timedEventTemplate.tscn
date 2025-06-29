@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://oqnnipgr0i6k"]
+
+[ext_resource type="PackedScene" uid="uid://bht85wpvc8uq8" path="res://scenes/eventTemplate.tscn" id="1_4f2bo"]
+[ext_resource type="Script" uid="uid://bmwr1k6v4nths" path="res://scripts/TimedEvent.gd" id="2_vt3fp"]
+
+[node name="TimedEvent" instance=ExtResource("1_4f2bo")]
+script = ExtResource("2_vt3fp")
+
+[node name="EventTimer" parent="." index="0"]
+wait_time = 10.0

@@ -1,0 +1,97 @@
+[gd_scene load_steps=4 format=3 uid="uid://bht85wpvc8uq8"]
+
+[ext_resource type="Texture2D" uid="uid://vqc0tcomelqs" path="res://assets/dialog background.png" id="1_ixbmw"]
+[ext_resource type="FontFile" uid="uid://ci0pq5ymqpduy" path="res://ui/fonts/C64_Pro_Mono-STYLE.ttf" id="2_4idsm"]
+[ext_resource type="Theme" uid="uid://d23mx807h3sks" path="res://DialogboxTheme.tres" id="2_7g0sx"]
+
+[node name="EventTemplate" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -5.0
+offset_top = -7.0
+offset_right = -5.0
+offset_bottom = -7.0
+
+[node name="EventTimer" type="Timer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = -54.0
+offset_top = -24.0
+offset_right = 426.0
+offset_bottom = 246.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Panel" type="Panel" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="VBoxContainer/HBoxContainer/Panel"]
+layout_mode = 1
+offset_left = -180.5
+offset_top = -104.0
+offset_right = 180.5
+offset_bottom = 76.0
+texture = ExtResource("1_ixbmw")
+region_rect = Rect2(0, 0, 32, 32)
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+metadata/_edit_use_anchors_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/HBoxContainer/Panel/NinePatchRect"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 357.0
+offset_bottom = 184.0
+
+[node name="Panel" type="Panel" parent="VBoxContainer/HBoxContainer/Panel/NinePatchRect/CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/Panel/NinePatchRect/CenterContainer/Panel"]
+layout_mode = 1
+offset_left = -172.0
+offset_top = -88.0
+offset_right = 172.0
+offset_bottom = 79.0
+theme = ExtResource("2_7g0sx")
+theme_override_fonts/font = ExtResource("2_4idsm")
+theme_override_font_sizes/font_size = 8
+text = "Event text goes here.
+Heat from fire fire from heat."
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/Panel/NinePatchRect"]
+layout_mode = 0
+offset_left = 6.5
+offset_top = 162.0
+offset_right = 46.5
+offset_bottom = 202.0
+
+[node name="HBoxContainer2" type="HSplitContainer" parent="."]
+layout_mode = 2
+offset_left = 10.0
+offset_top = 200.0
+offset_right = 370.0
+offset_bottom = 232.0
+
+[node name="PositiveButton" type="Button" parent="HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_7g0sx")
+text = "Positive"
+
+[node name="NegativeButton" type="Button" parent="HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_7g0sx")
+theme_override_fonts/font = ExtResource("2_4idsm")
+text = "Negative"
+
+[connection signal="timeout" from="EventTimer" to="." method="_on_event_timer_timeout"]
+[connection signal="pressed" from="HBoxContainer2/PositiveButton" to="." method="_on_positive_button_pressed"]
+[connection signal="pressed" from="HBoxContainer2/NegativeButton" to="." method="_on_negative_button_pressed"]
