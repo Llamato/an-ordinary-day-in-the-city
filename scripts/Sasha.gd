@@ -9,6 +9,7 @@ enum State { IDLE, FOLLOW }
 @export var movement_speed: float = 16.0
 @export var ARRIVE_DISTANCE = .4
 @export var current_speed: Vector2 = Vector2(0., 0.)
+#@onready var _tile_map = get_node("/root/Node2D/TileMapLayer")
 @onready var _tile_map = get_node("/root/Node2D/TileMapLayer")
 
 
@@ -112,7 +113,7 @@ func _snap_to_cardinal(the_speed: Vector2) -> Vector2:
 
 func _set_animation(_force: bool = false) -> void:
 	if _state == State.IDLE:
-		animatedSprite.stop()
+		animatedSprite.play("Idle")
 		return
 	var unit_direction = _snap_to_cardinal(current_speed)
 	match unit_direction:
