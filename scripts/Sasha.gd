@@ -9,7 +9,8 @@ enum State { IDLE, FOLLOW }
 @export var movement_speed: float = 16.0
 @export var ARRIVE_DISTANCE = .4
 @export var current_speed: Vector2 = Vector2(0., 0.)
-@onready var _tile_map = $TileMapLayer
+@onready var _tile_map = get_node("/root/Node2D/TileMapLayer")
+
 
 var _state = State.IDLE
 var _velocity = Vector2()
