@@ -21,17 +21,28 @@ func _ready():
 	_astar.default_estimate_heuristic = AStarGrid2D.HEURISTIC_MANHATTAN
 	_astar.diagonal_mode = AStarGrid2D.DIAGONAL_MODE_NEVER
 	_astar.update()
+	var used_cells = get_used_cells();
 
-	for i in range(_astar.region.position.x, _astar.region.end.x):
-		for j in range(_astar.region.position.y, _astar.region.end.y):
-			var pos = Vector2i(i, j)
-			var data = get_cell_tile_data(pos)
-			if data == null :
-				_astar.set_point_solid(pos)
-				break
-			if data.get_collision_polygons_count(0) != 0:
-				_astar.set_point_solid(pos)
-
+	for cell in used_cells:
+		var data = get_cell_tile_data(cell)
+		if data == null:
+			_astar.set_point_solid(cell, true)
+			break
+		if data.get_collision_polygons_count(0) != 0:
+			_astar.set_point_solid(cell, true)
+	#print("a* setup complete");
+	#print_astar_solid_map(_astar);
+	
+func print_astar_solid_map(astar):
+	for i in range(astar.region.position.x,astar.region.end.x):
+		var temp = "";
+		for j in range(astar.region.position.y,astar.region.end.y):
+			var test = str(astar.is_point_solid(Vector2(i,j)));
+			if astar.is_point_solid(Vector2(i,j)) == true:
+				temp += "X";
+			else:
+				temp += "O";
+		print(temp);
 
 
 
@@ -59,7 +70,7 @@ func find_path(local_start_point, local_end_point):
 
 	_start_point = local_to_map(local_start_point)
 	_end_point = local_to_map(local_end_point)
-	_path = _astar.get_point_path(_start_point, _end_point)
+	_path = _astar.get_point_path(_start_point, _end_point, true)
 
 	# Redraw the lines and circles from the start to the end point.
 	queue_redraw()
