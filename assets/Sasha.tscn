@@ -1,11 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://coggffdij1lhg"]
+[gd_scene load_steps=18 format=3 uid="uid://cpdxvv6v82dfx"]
 
 [ext_resource type="Script" uid="uid://c8qokgoj41ofc" path="res://scripts/Sasha.gd" id="1_ojwee"]
 [ext_resource type="Texture2D" uid="uid://b4k88116rg1f1" path="res://assets/tiles/tilemap_packed.png" id="2_vb15s"]
 [ext_resource type="Script" uid="uid://bpaw8a366r31j" path="res://scripts/camera.gd" id="3_vb15s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rs6on"]
-size = Vector2(16, 16)
+size = Vector2(10, 10.05)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yc13m"]
 atlas = ExtResource("2_vb15s")
@@ -115,8 +115,6 @@ animations = [{
 }]
 
 [node name="Sasha" type="CharacterBody2D" groups=["ete", "event_triggering_entities"]]
-collision_layer = 0
-collision_mask = 0
 script = ExtResource("1_ojwee")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

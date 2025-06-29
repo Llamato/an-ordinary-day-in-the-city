@@ -9,7 +9,7 @@ enum State { IDLE, FOLLOW }
 @export var movement_speed: float = 16.0
 @export var ARRIVE_DISTANCE = .4
 @export var current_speed: Vector2 = Vector2(0., 0.)
-@onready var _tile_map = get_node("../TileMapLayer")
+@onready var _tile_map = get_node("/root/Node2D/TileMapLayer")
 
 var _state = State.IDLE
 var _velocity = Vector2()
@@ -20,10 +20,10 @@ var _click_position = Vector2()
 var _path = PackedVector2Array()
 var _next_point = Vector2()
 
-func _set_grid(active_grid: Rect2):
-	astar_grid.region = active_grid
-	astar_grid.cell_size = Vector2(16, 16)
-	astar_grid.update()
+#func _set_grid(active_grid: Rect2):
+#	astar_grid.region = active_grid
+#	astar_grid.cell_size = Vector2(16, 16)
+#	astar_grid.update()
 	
 func _ready() -> void:
 	set_movement_target()
@@ -48,7 +48,7 @@ func _move_to(local_position):
 		_velocity = _space_diff.normalized()
 	_velocity *= 16. 
 	current_speed = _velocity
-	position += _velocity * get_process_delta_time() 
+	move_and_collide(_velocity * get_process_delta_time())
 	_set_animation()
 	return position.distance_to(local_position) < ARRIVE_DISTANCE
 
@@ -68,7 +68,9 @@ func _on_velocity_computed(safe_velocity: Vector2):
 	velocity = safe_velocity
 	current_speed = safe_velocity
 	_set_animation()
-	move_and_slide()
+	var collision = move_and_collide(safe_velocity)
+	if collision:
+		print("I collided with ", collision.get_collider().name)
 	
 func _change_state(new_state):
 	if new_state == State.IDLE:
