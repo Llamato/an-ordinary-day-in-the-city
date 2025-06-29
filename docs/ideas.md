@@ -17,7 +17,8 @@
 - [] Randomised events (eventliste)
 - [] Music (lowfi fürs planen, Adventure mäßig für lauf)
 - [x] Level zeit (3min)
-- [] Umplanen (zeitlich getimed, geht von der Level zeit ab)
+- [] Umplanen (zeitlich getimed, geht von der Level zeit ab
+- [] Marvin die Biene 
 
 ## Nice to have:
 - [] Tag-Nacht 
@@ -29,7 +30,7 @@
 - [] Bahn
 - [] Katzen bewegen sich
 - [] Credits
-- [] Marvin die Biene 
+
 
 ## Namen:
 A ordinary day in the City 
