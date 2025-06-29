@@ -15,7 +15,7 @@
 - [] Karte (Charakter)
 - [x] Events(Ort-zeit)
 - [] Randomised events (eventliste)
-- [] Music (lowfi fürs planen, Adventure mäßig für lauf)
+- [x] Music (lowfi fürs planen, Adventure mäßig für lauf)
 - [x] Level zeit (3min)
 - [] Umplanen (zeitlich getimed, geht von der Level zeit ab
 - [] Marvin die Biene 
