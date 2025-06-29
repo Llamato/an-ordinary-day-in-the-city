@@ -30,7 +30,7 @@ func _on_negative_button_pressed() -> void:
 	completeEvent()
 	negative_choice_chosen.emit()
 
-func fireEvent():
+func fireEvent(choice : bool):
 	dialogRoot.visible = true
 	dialogRoot.top_level = true
 

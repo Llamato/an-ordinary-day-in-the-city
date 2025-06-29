@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ddoao5u3dsckx"
+path="res://.godot/imported/planning time but make it hectic.ogg-b2f45a429862744ee3f6a9ea517a7152.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Background Music/planning time but make it hectic.ogg"
+dest_files=["res://.godot/imported/planning time but make it hectic.ogg-b2f45a429862744ee3f6a9ea517a7152.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

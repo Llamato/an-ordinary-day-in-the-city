@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dxcrr56336d4p"
+path="res://.godot/imported/ambient sounds.ogg-0ac62c8b53774031e4fcff011765842e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Background Music/ambient sounds.ogg"
+dest_files=["res://.godot/imported/ambient sounds.ogg-0ac62c8b53774031e4fcff011765842e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -11,7 +11,6 @@ tickmarkTexture = ExtResource("2_7dv1d")
 [node name="GameTimer" type="Timer" parent="."]
 wait_time = 180.0
 one_shot = true
-autostart = true
 
 [node name="ClockBackground" type="Sprite2D" parent="."]
 texture = ExtResource("1_y58p0")
@@ -19,4 +18,5 @@ centered = false
 
 [node name="TickmarkTimer" type="Timer" parent="."]
 
+[connection signal="timeout" from="GameTimer" to="." method="_on_game_timer_timeout"]
 [connection signal="timeout" from="TickmarkTimer" to="." method="_on_tickmark_timer_timeout"]

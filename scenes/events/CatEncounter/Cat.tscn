@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbhpsm73yb4uq"]
+
+[ext_resource type="Texture2D" uid="uid://jd5flcqthl13" path="res://assets/aseprite/F0.png" id="1_heiru"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0x2uo"]
+size = Vector2(13.75, 15.75)
+
+[node name="Cat" type="CharacterBody2D"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_heiru")
+
+[node name="CollisionShape" type="CollisionShape2D" parent="."]
+position = Vector2(-1.125, 0.125)
+shape = SubResource("RectangleShape2D_0x2uo")
