@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkasoewci5vnl"]
+
+[ext_resource type="PackedScene" path="res://scenes/EventMap.tscn" id="1_1c2ey"]
+[ext_resource type="PackedScene" uid="uid://cpdxvv6v82dfx" path="res://assets/Sasha.tscn" id="2_6tsyx"]
+[ext_resource type="PackedScene" path="res://assets/audio/BackgroundSound.tscn" id="2_8mff8"]
+
+[node name="Node2D" instance=ExtResource("1_1c2ey")]
+
+[node name="SoundPlayer" parent="." index="0" instance=ExtResource("2_8mff8")]
+position = Vector2(184, 611)
+
+[node name="Sasha" parent="TileMapLayer/TileMapLayer2/EventLayer" index="0" instance=ExtResource("2_6tsyx")]
+position = Vector2(54, 681)

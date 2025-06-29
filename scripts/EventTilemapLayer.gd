@@ -34,11 +34,15 @@ func check_entity_position(entity):
 			canves_base.add_child(dialog_in_progress)
 
 func _handle_positive_choice():
+	if (dialog_in_progress == null):
+		return
 	dialog_in_progress.fireEvent(true)
 	dialog_in_progress.completeEvent()
 	dialog_in_progress = null
 	
 func _handle_negative_choice():
+	if (dialog_in_progress == null):
+		return
 	dialog_in_progress.fireEvent(false)
 	dialog_in_progress.completeEvent()
 	dialog_in_progress = null

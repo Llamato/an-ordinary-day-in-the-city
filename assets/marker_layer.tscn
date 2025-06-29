@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dq41gxrcdbbcx"]
 
-[ext_resource type="Texture2D" uid="uid://j0c7e0m3mvkd" path="res://assets/tiles/marker_tilesheet.png" id="1_ins6n"]
+[ext_resource type="Texture2D" uid="uid://lj52wbfu1n7d" path="res://assets/tiles/marker_tilesheet.png" id="1_ins6n"]
 [ext_resource type="Script" uid="uid://djdkdr13cjf24" path="res://tile_map_layer.gd" id="2_qey1q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mvrwq"]
