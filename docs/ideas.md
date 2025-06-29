@@ -41,11 +41,11 @@ In case of Dragons - Break map
 - [] Anfangs und Endszene als Artwork
 
 Eventliste:
-man begegnet einer kazte, und will sie streicheln
-man steht an einer ampel, und muss auf grün warten
-man muss wegen einer baustelle einen umweg gehen
-man geht in den waraxe shop, um farben für minis zu kaufen
-man geht zum brettspieleladen, um minis und würfel zu kaufen
-man geht an der uni vorbei, und wird von einem kommilitonen angesprochen und aufgehalten
-man kommt an einem see vorbei, und füttert die enten mit entenfutter
-man begegnet marvin der biene, und muss ausweichen 
+- [x] Man begegnet einer kazte, und will sie streicheln
+- [] Man steht an einer ampel, und muss auf grün warten
+- [] Man muss wegen einer baustelle einen umweg gehen
+- [] Man geht in den waraxe shop, um farben für minis zu kaufen
+- [] Man geht zum brettspieleladen, um minis und würfel zu kaufen
+- [] Man geht an der uni vorbei, und wird von einem kommilitonen angesprochen und aufgehalten
+- [] Man kommt an einem see vorbei, und füttert die enten mit entenfutter
+- [] Man begegnet marvin der biene, und muss ausweichen 

@@ -26,5 +26,9 @@ func _on_tickmark_timer_timeout() -> void:
 	tickmark.texture = tickmarkTexture
 	tickmark.position = tickmark_position
 	clockBackground.add_child(tickmark)
-	
-	
+
+func _on_game_timer_timeout() -> void:
+	var endscreen_file = load("res://scenes/enscreen.tscn")
+	var endscreen_instance = endscreen_file.instantiate()
+	get_tree().add_child(endscreen_instance)
+	get_tree().paused = true

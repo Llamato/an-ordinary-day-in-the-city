@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxchqkfak0uo"]
+
+[ext_resource type="PackedScene" uid="uid://n5wmbqmmrp7" path="res://scenes/locationEventTemplate.tscn" id="1_5tsbv"]
+[ext_resource type="Script" uid="uid://bj28uruq78wuj" path="res://scripts/events/cat_event.gd" id="2_pgf23"]
+
+[node name="LocationEvent" instance=ExtResource("1_5tsbv")]
+script = ExtResource("2_pgf23")
+dialogText = "A wild Cat appeard. What do you want to do?"
+positiveButtonCaption = "Pet the Cat"
+negativeButtonCaption = "Walk by"
