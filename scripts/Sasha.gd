@@ -25,6 +25,9 @@ var _next_point = Vector2()
 #	astar_grid.cell_size = Vector2(16, 16)
 #	astar_grid.update()
 	
+func _is_idle() -> bool:
+	return _state == State.IDLE
+	
 func _ready() -> void:
 	set_movement_target()
 	
