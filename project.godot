@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="An ordinary day in the city"
-run/main_scene="uid://bp6e8m5qnxhh4"
+run/main_scene="uid://c1a6ooib6td5c"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="uid://brve5ud37wqub"
 
@@ -26,6 +26,10 @@ window/stretch/scale=4.0
 
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
+
+[global_group]
+
+ete=""
 
 [input]
 

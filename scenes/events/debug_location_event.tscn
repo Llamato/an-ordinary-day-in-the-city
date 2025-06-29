@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://gsmyt2mqaj57"]
+
+[ext_resource type="PackedScene" uid="uid://n5wmbqmmrp7" path="res://scenes/locationEventTemplate.tscn" id="1_n7nvl"]
+
+[node name="DebugLocationEvent" instance=ExtResource("1_n7nvl")]
+dialogText = "Hello world!"
