@@ -13,9 +13,9 @@
 - [] Weg planen, begrenzte wegelemente 
 - [x] Sidescroll (Uhr/charakter) 
 - [] Karte (Charakter)
-- [x] Events(Ort-zeit)
+- [] Events(Ort-zeit)
 - [] Randomised events (eventliste)
-- [x] Music (lowfi fürs planen, Adventure mäßig für lauf)
+- [] Music (lowfi fürs planen, Adventure mäßig für lauf)
 - [x] Level zeit (3min)
 - [] Umplanen (zeitlich getimed, geht von der Level zeit ab
 - [] Marvin die Biene 
@@ -30,7 +30,7 @@
 - [] Bahn
 - [] Katzen bewegen sich
 - [] Credits
-cc
+
 
 ## Namen:
 A ordinary day in the City 
@@ -41,11 +41,12 @@ In case of Dragons - Break map
 - [] Anfangs und Endszene als Artwork
 
 Eventliste:
-- [x] Man begegnet einer kazte, und will sie streicheln
-- [] Man steht an einer ampel, und muss auf grün warten
-- [] Man muss wegen einer baustelle einen umweg gehen
-- [] Man geht in den waraxe shop, um farben für minis zu kaufen
-- [] Man geht zum brettspieleladen, um minis und würfel zu kaufen
-- [] Man geht an der uni vorbei, und wird von einem kommilitonen angesprochen und aufgehalten
-- [] Man kommt an einem see vorbei, und füttert die enten mit entenfutter
-- [] Man begegnet marvin der biene, und muss ausweichen 
+man begegnet einer kazte, und will sie streicheln
+man steht an einer ampel, und muss auf grün warten
+man muss wegen einer baustelle einen umweg gehen
+man geht in den waraxe shop, um farben für minis zu kaufen
+man geht zum brettspieleladen, um minis und würfel zu kaufen
+man geht an der uni vorbei, und wird von einem kommilitonen angesprochen und aufgehalten
+man kommt an einem see vorbei, und füttert die enten mit entenfutter
+man begegnet marvin der biene, und muss ausweichen 
+
