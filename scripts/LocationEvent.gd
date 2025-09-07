@@ -1,2 +1,0 @@
-extends DialogEvent
-class_name LocationEvent
